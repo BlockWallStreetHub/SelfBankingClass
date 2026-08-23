@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Self Banking With AAVE | Block Wall Street</title>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Barlow:wght@400;500;600;700&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --navy-950:#070b14;
+    --navy-900:#0b1120;
+    --navy-800:#121a2e;
+    --navy-700:#1a2540;
+    --gold-500:#d4af37;
+    --gold-400:#e8c96a;
+    --gold-300:#f2dc9a;
+    --text-soft:#b7c0d1;
+  }
+  *{box-sizing:border-box;margin:0;padding:0;}
+  body{
+    background:
+      radial-gradient(circle at 20% 10%, rgba(212,175,55,0.08), transparent 40%),
+      radial-gradient(circle at 80% 90%, rgba(212,175,55,0.06), transparent 45%),
+      var(--navy-950);
+    color:#fff;
+    font-family:'Barlow',sans-serif;
+    min-height:100vh;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    padding:32px 16px;
+  }
+  .card{
+    max-width:560px;
+    width:100%;
+    background:linear-gradient(180deg,var(--navy-900),var(--navy-800));
+    border:1px solid rgba(212,175,55,0.25);
+    border-radius:18px;
+    padding:40px 36px 36px;
+    box-shadow:0 30px 80px rgba(0,0,0,0.5);
+    position:relative;
+    overflow:hidden;
+  }
+  .card::before{
+    content:"";
+    position:absolute;
+    top:0;left:0;right:0;
+    height:4px;
+    background:linear-gradient(90deg,var(--gold-500),var(--gold-300),var(--gold-500));
+  }
+  .eyebrow{
+    font-family:'DM Mono',monospace;
+    font-size:12px;
+    letter-spacing:2.5px;
+    text-transform:uppercase;
+    color:var(--gold-400);
+    margin-bottom:14px;
+  }
+  h1{
+    font-family:'Bebas Neue',sans-serif;
+    font-size:44px;
+    line-height:1.05;
+    letter-spacing:1px;
+    color:#fff;
+    margin-bottom:6px;
+  }
+  h1 span{color:var(--gold-400);}
+  .subtitle{
+    color:var(--text-soft);
+    font-size:15px;
+    margin-bottom:26px;
+    line-height:1.5;
+  }
+  .details{
+    display:flex;
+    gap:14px;
+    flex-wrap:wrap;
+    margin-bottom:28px;
+  }
+  .pill{
+    display:flex;
+    align-items:center;
+    gap:8px;
+    background:rgba(212,175,55,0.08);
+    border:1px solid rgba(212,175,55,0.3);
+    border-radius:999px;
+    padding:9px 16px;
+    font-family:'DM Mono',monospace;
+    font-size:13px;
+    color:var(--gold-300);
+  }
+  .pill svg{width:15px;height:15px;flex-shrink:0;}
+  .info-box{
+    background:var(--navy-700);
+    border:1px solid rgba(255,255,255,0.06);
+    border-radius:12px;
+    padding:18px 20px;
+    margin-bottom:30px;
+  }
+  .info-box h3{
+    font-family:'Bebas Neue',sans-serif;
+    letter-spacing:1px;
+    font-size:18px;
+    color:var(--gold-400);
+    margin-bottom:8px;
+  }
+  .info-box p{
+    color:var(--text-soft);
+    font-size:14px;
+    line-height:1.6;
+  }
+  .info-box p + p{margin-top:8px;}
+  .cta{
+    display:block;
+    width:100%;
+    text-align:center;
+    background:linear-gradient(90deg,var(--gold-500),var(--gold-400));
+    color:var(--navy-950);
+    font-family:'Bebas Neue',sans-serif;
+    font-size:22px;
+    letter-spacing:1.5px;
+    padding:16px 20px;
+    border-radius:10px;
+    text-decoration:none;
+    transition:transform 0.15s ease, box-shadow 0.15s ease;
+    box-shadow:0 10px 30px rgba(212,175,55,0.25);
+  }
+  .cta:hover{
+    transform:translateY(-2px);
+    box-shadow:0 14px 36px rgba(212,175,55,0.35);
+  }
+  .fineprint{
+    text-align:center;
+    color:#6b7688;
+    font-size:12px;
+    margin-top:16px;
+    font-family:'DM Mono',monospace;
+    line-height:1.6;
+  }
+  .footer-brand{
+    text-align:center;
+    margin-top:30px;
+    font-family:'DM Mono',monospace;
+    font-size:11px;
+    letter-spacing:2px;
+    text-transform:uppercase;
+    color:#4a5468;
+  }
+</style>
+</head>
+<body>
+  <div class="card">
+    <div class="eyebrow">Block Wall Street &mdash; Live Class</div>
+    <h1>Self Banking<br>With <span>AAVE</span></h1>
+    <p class="subtitle">Learn how to borrow against your Bitcoin and Ethereum without selling &mdash; become your own bank using decentralized lending.</p>
+
+    <div class="details">
+      <div class="pill">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 3"/></svg>
+        Tonight, 7:00 PM
+      </div>
+      <div class="pill">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="8" width="18" height="4" rx="1"/><path d="M12 8v13M5 8v11a2 2 0 002 2h10a2 2 0 002-2V8M9 8V5a3 3 0 016 0v3"/></svg>
+        Live + Recording
+      </div>
+    </div>
+
+    <div class="info-box">
+      <h3>What You'll Walk Away With</h3>
+      <p>&bull; How AAVE lending/borrowing actually works</p>
+      <p>&bull; Using BTC/ETH as collateral instead of selling it</p>
+      <p>&bull; Managing loan-to-value ratio and avoiding liquidation</p>
+      <p>&bull; Can't make it live? The full recording goes out to everyone registered.</p>
+    </div>
+
+    <a class="cta" href="https://buy.stripe.com/9B614p6DCg9h6f4cjm2sM02" target="_blank" rel="noopener">Reserve Your Spot &rarr;</a>
+    <p class="fineprint">Secure checkout powered by Stripe<br>Recording sent to your email after the session</p>
+
+    <div class="footer-brand">Block Wall Street</div>
+  </div>
+</body>
+</html>
